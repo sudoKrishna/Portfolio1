@@ -44,10 +44,10 @@ export default function Footer() {
                     <div className={styles.column}>
                         <span className={styles.linkTitle}>Contact</span>
                         <a
-                            href="mailto:krishna.dev@gmail.com"
+                            href="mailto:krishnachaudhary2007gt@gmail.com"
                             className={styles.linkItem}
                         >
-                            krishna.dev@gmail.com
+                            krishnachaudhary2007gt@gmail.com
                         </a>
                     </div>
                 </div>
