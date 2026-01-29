@@ -1,0 +1,129 @@
+.section {
+    padding: var(--spacing-2xl) var(--spacing-lg);
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+.sectionTitle {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    margin-bottom: var(--spacing-xl);
+    font-weight: 400;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--spacing-md);
+    width: 100%;
+}
+
+.gridItem {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: var(--muted);
+}
+
+.gridItem:nth-child(1) {
+    grid-column: span 8;
+    grid-row: span 2;
+    min-height: 600px;
+}
+
+.gridItem:nth-child(2) {
+    grid-column: span 4;
+    grid-row: span 1;
+    min-height: 300px;
+}
+
+.gridItem:nth-child(3) {
+    grid-column: span 4;
+    grid-row: span 1;
+    min-height: 300px;
+}
+
+.gridItem:nth-child(4) {
+    grid-column: span 6;
+    grid-row: span 2;
+    min-height: 500px;
+}
+
+.gridItem:nth-child(5) {
+    grid-column: span 6;
+    grid-row: span 2;
+    min-height: 500px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s var(--transition-smooth);
+}
+
+.gridItem:hover .image {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: var(--spacing-md);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gridItem:hover .overlay {
+    opacity: 1;
+}
+
+.projectTitle {
+    color: #fff;
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+}
+
+.gridItem:hover .projectTitle {
+    transform: translateY(0);
+}
+
+.projectCategory {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transform: translateY(20px);
+    transition: transform 0.5s ease;
+}
+
+.gridItem:hover .projectCategory {
+    transform: translateY(0);
+}
+
+@media (max-width: 1024px) {
+    .gridItem:nth-child(n) {
+        grid-column: span 6;
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gridItem:nth-child(n) {
+        grid-column: span 12;
+        min-height: 300px;
+    }
+
+    .section {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+}

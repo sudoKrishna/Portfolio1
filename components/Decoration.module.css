@@ -1,0 +1,34 @@
+.container {
+    position: absolute;
+    /* Relative to section or main */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.verticalText {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    writing-mode: vertical-rl;
+    font-family: var(--font-serif);
+    font-size: 12rem;
+    color: var(--foreground);
+    opacity: 0.03;
+    line-height: 1;
+    user-select: none;
+}
+
+.kanji {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    font-size: 20rem;
+    opacity: 0.02;
+    font-weight: 700;
+    color: var(--foreground);
+}
