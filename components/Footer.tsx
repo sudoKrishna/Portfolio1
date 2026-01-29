@@ -10,22 +10,58 @@ export default function Footer() {
                 <h2 className={styles.headline}>
                     Let’s create something<br />timeless together.
                 </h2>
+
                 <div className={styles.links}>
                     <div className={styles.column}>
                         <span className={styles.linkTitle}>Socials</span>
-                        <a href="#" className={styles.linkItem}>Instagram</a>
-                        <a href="#" className={styles.linkItem}>LinkedIn</a>
-                        <a href="#" className={styles.linkItem}>Twitter</a>
+
+                        <a
+                            href="mailto:krishnachaudhary2007gt@gmail.com"
+                            className={styles.linkItem}
+                        >
+                            Email
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/krishna-chaudhary-1b287526b/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.linkItem}
+                        >
+                            LinkedIn
+                        </a>
+
+                        <a
+                            href="https://x.com/cha73066"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.linkItem}
+                        >
+                            X (Twitter)
+                        </a>
                     </div>
+
                     <div className={styles.column}>
                         <span className={styles.linkTitle}>Contact</span>
-                        <a href="mailto:hello@jules.studio" className={styles.linkItem}>hello@jules.studio</a>
+                        <a
+                            href="mailto:krishna.dev@gmail.com"
+                            className={styles.linkItem}
+                        >
+                            krishna.dev@gmail.com
+                        </a>
                     </div>
                 </div>
             </div>
+
             <div className={styles.bottom}>
-                <span>© 2026 Jules Studio. All Rights Reserved.</span>
-                <span>Local Time: {new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}</span>
+                <span>© 2026 Krishna Chaudhary. All Rights Reserved.</span>
+                <span>
+                    Local Time:{' '}
+                    {new Date().toLocaleTimeString('en-US', {
+                        hour: '2-digit',
+                        minute: '2-digit',
+                    })}
+                </span>
             </div>
         </footer>
     );
